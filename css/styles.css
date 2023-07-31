@@ -1,0 +1,285 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  color: #444;
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.5;
+  margin: 0;
+  padding: 0;
+}
+.container {
+  width: 100%;
+  max-width: 1140px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* HEADER */
+.container-header {
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.header-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: auto;
+}
+.name {
+  color: #222;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-decoration: none;
+  transition: color 0.4s ease, opacity 0.4s ease;
+}
+.name:hover {
+  color: #DE2E54;
+}
+.name:active {
+  opacity: 0.6;
+}
+.logo {
+  margin-right: 16px;
+}
+.logo:active {
+  opacity: 0.6;
+}
+.list {
+  text-decoration: none;
+  color: #222;
+  margin-right: 32px;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  transition: color 0.4s ease, opacity 0.4s ease;
+}
+.list:hover {
+  color: #DE2E54;
+}
+.list:active {
+  opacity: 0.6;
+}
+.last-list {
+  margin-right: 0;
+}
+.header-links {
+  margin-right: auto;
+}
+.header-ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.button {
+  display: inline-flex;
+  padding: 12px 24px;
+  border-radius: 8px;
+  border: 2px solid #DE2E54;
+  background: #DE2E54;
+  text-decoration: none;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  transition: background-color 0.4s ease, color 0.4s ease, opacity 0.4s ease;
+}
+.button:hover {
+  background-color: #fff;
+  color: #DE2E54;
+}
+.button:active {
+  opacity: 0.6;
+  background-color: #DE2E54;
+  color: #fff;
+}
+
+/* MAIN-RASIMLI SECTION */
+.container-rasim {
+  padding-top: 120px;
+  padding-bottom: 132px;
+  display: flex;
+}
+.section-rasim {
+  background-color: #0EB4C1;
+  color: #fff;
+}
+.rasim-header {
+  margin-top: 0;
+  margin-bottom: 16px;
+}
+.rasim-text {
+  margin-top: 0;
+  margin-bottom: 36px;
+}
+.rasim-button:hover {
+  background-color: rgba(222, 46, 84, 0.80);
+  border:0;
+  color: #fff;
+}
+.rasim-button:active {
+  background-color: rgba(222, 46, 84, 0.60);
+}
+
+/* XIZMATLAR SECTIONI */
+.section-xizmatlar {
+  padding-top: 120px;
+}
+.heading-xizmatlar {
+  width: 133px;
+  margin-top: 0;
+  margin-bottom: 56px;
+  margin-left: auto;
+  margin-right: auto;
+  color: #000;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.2
+}
+.xizmatlar-turlari {
+  display: flex;
+  align-items: center;
+  margin-bottom: 80px;
+}
+.last-xizmat {
+  margin-bottom: 60;
+}
+.xizmat-nomi {
+  color: #222;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-top: 0;
+  margin-bottom: 24px;
+}
+.xizmat-malumoti {
+  margin-left: 64px;
+}
+.xizmat-text {
+  margin: 0;
+}
+.xizmatlar-button {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  margin-bottom: 120px;
+}
+
+/* REGISTRATION SECTION */
+.section-registration {
+  background-color: #0EB4C1;
+  padding-top: 64px;
+  padding-bottom: 64px;
+}
+.heading-registration {
+  margin: 0;
+  margin-bottom: 40px;
+  color: #FFF;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.2;
+  text-align: center;
+}
+.kontaktal {
+  display: flex;
+  justify-content: center;
+}
+.button-kontakt {
+  padding: 12px 24px;
+  border-radius: 8px;
+  border: 2px solid #FFF;
+  margin-top: 0;
+  margin-bottom: 0;
+  justify-content: center;
+  display: inline-block;
+  transition: background-color 0.4s ease, border-color 0.4s ease, opacity 0.4s ease;
+}
+.button-kontakt:hover {
+  border-color: #DE2E54;
+  background-color: #DE2E54;
+}
+.button-kontakt:active {
+  opacity: 0.6;
+}
+.phone {
+  margin-right: 40px;
+}
+.kontakt-link {
+  text-decoration: none;
+  color: #FFF;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+/* SITE FOOTER */
+.footer {
+  padding: 24px;
+  background-color: #222;
+}
+.footer-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer-name {
+  color: #FFF;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: normal;
+  transition: opacity 0.4s ease, color 0.4s ease;
+}
+.footer-name:active {
+  opacity: 0.6;
+  color: #fff;
+}
+.logo-name {
+  margin-right: auto;
+}
+.footer-list {
+  color: #FFF;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-decoration: none;
+  margin-right: 32px;
+  transition: color 0.4s ease, opacity 0.4s ease;
+}
+.footer-list:hover {
+  color: #DE2E54;
+}
+.footer-list:active {
+  color: #fff;
+  opacity: 0.6;
+}
+.footer-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer ul {
+  list-style: none;
+  display: flex;
+  padding-left: 0;
+}
+.last-footer-list {
+  margin-right: 0;
+}
