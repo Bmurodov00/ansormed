@@ -11,6 +11,9 @@ body {
   margin: 0;
   padding: 0;
 }
+html {
+  scroll-behavior: smooth;
+}
 .container {
   width: 100%;
   max-width: 1140px;
@@ -31,24 +34,21 @@ body {
   justify-content: center;
 }
 .header-logo {
+  color: #222;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: normal;
   display: flex;
   justify-content: center;
   align-items: center;
   margin-right: auto;
-}
-.name {
-  color: #222;
-  font-size: 24px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: normal;
   text-decoration: none;
   transition: color 0.4s ease, opacity 0.4s ease;
 }
-.name:hover {
+.header-logo:hover {
   color: #DE2E54;
 }
-.name:active {
+.header-logo:active {
   opacity: 0.6;
 }
 .logo {
@@ -86,8 +86,8 @@ body {
   padding: 0;
 }
 .button {
-  display: inline-flex;
-  padding: 12px 24px;
+  display: inline-block;
+  padding: 10px 22px;
   border-radius: 8px;
   border: 2px solid #DE2E54;
   background: #DE2E54;
@@ -110,42 +110,56 @@ body {
 }
 
 /* MAIN-RASIMLI SECTION */
-.container-rasim {
-  padding-top: 120px;
-  padding-bottom: 132px;
-  display: flex;
-}
 .section-rasim {
   background-color: #0EB4C1;
   color: #fff;
 }
+.container-rasim {
+  display: flex;
+}
+.rasim-hero {
+  width: 500px;
+  padding-top: 120px;
+  padding-bottom: 120px;
+  margin-right: 177px;
+}
 .rasim-header {
   margin-top: 0;
   margin-bottom: 16px;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.2;
 }
 .rasim-text {
   margin-top: 0;
   margin-bottom: 36px;
+  width: 440px;
+}
+.doctor-rasim {
+  align-self: flex-end;
 }
 .rasim-button:hover {
   background-color: rgba(222, 46, 84, 0.80);
-  border:0;
+  border-color:transparent;
   color: #fff;
 }
 .rasim-button:active {
   background-color: rgba(222, 46, 84, 0.60);
+  opacity: 1;
 }
 
 /* XIZMATLAR SECTIONI */
 .section-xizmatlar {
   padding-top: 120px;
+  margin-bottom: 120px;
+}
+.xizmatlar-container {
+  width: 864px;
 }
 .heading-xizmatlar {
-  width: 133px;
+  text-align: center;
   margin-top: 0;
   margin-bottom: 56px;
-  margin-left: auto;
-  margin-right: auto;
   color: #000;
   font-size: 36px;
   font-weight: 700;
@@ -159,6 +173,12 @@ body {
 .last-xizmat {
   margin-bottom: 60;
 }
+.xizmat-img {
+  margin-right: 64px;
+  width: 200px;
+  height: 200px;
+  border-radius: 24px;
+}
 .xizmat-nomi {
   color: #222;
   font-size: 24px;
@@ -167,59 +187,37 @@ body {
   margin-top: 0;
   margin-bottom: 24px;
 }
-.xizmat-malumoti {
-  margin-left: 64px;
-}
 .xizmat-text {
   margin: 0;
 }
 .xizmatlar-button {
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
-  margin-bottom: 120px;
+  display: flex;
+  justify-content: center;
 }
 
 /* REGISTRATION SECTION */
-.section-registration {
+.cta {
   background-color: #0EB4C1;
   padding-top: 64px;
   padding-bottom: 64px;
+  color: #FFF;
 }
-.heading-registration {
+.heading-cta {
   margin: 0;
   margin-bottom: 40px;
-  color: #FFF;
   font-size: 36px;
   font-weight: 700;
   line-height: 1.2;
   text-align: center;
 }
-.kontaktal {
+.cta-links {
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 .button-kontakt {
-  padding: 12px 24px;
-  border-radius: 8px;
+  background-color:#0EB4C1;
   border: 2px solid #FFF;
-  margin-top: 0;
-  margin-bottom: 0;
-  justify-content: center;
-  display: inline-block;
-  transition: background-color 0.4s ease, border-color 0.4s ease, opacity 0.4s ease;
-}
-.button-kontakt:hover {
-  border-color: #DE2E54;
-  background-color: #DE2E54;
-}
-.button-kontakt:active {
-  opacity: 0.6;
-}
-.phone {
-  margin-right: 40px;
-}
-.kontakt-link {
   text-decoration: none;
   color: #FFF;
   font-size: 15px;
@@ -227,6 +225,18 @@ body {
   line-height: 1.2;
   letter-spacing: 2px;
   text-transform: uppercase;
+  transition: background-color 0.4s ease, border-color 0.4s ease, opacity 0.4s ease;
+}
+.button-kontakt:hover {
+  border-color: transparent;
+  background-color: #DE2E54;
+  color: #FFF;
+}
+.button-kontakt:active {
+  opacity: 0.6;
+}
+.phone {
+  margin-right: 40px;
 }
 
 /* SITE FOOTER */
@@ -239,19 +249,21 @@ body {
   justify-content: center;
   align-items: center;
 }
-.footer-name {
+.footer-logo {
   color: #FFF;
   font-size: 24px;
   font-weight: 600;
   line-height: normal;
+  margin-right: auto;
+  text-decoration: none;
   transition: opacity 0.4s ease, color 0.4s ease;
 }
-.footer-name:active {
+.footer-logo:hover {
+  color: #DE2E54;
+}
+.footer-logo:active {
   opacity: 0.6;
   color: #fff;
-}
-.logo-name {
-  margin-right: auto;
 }
 .footer-list {
   color: #FFF;
